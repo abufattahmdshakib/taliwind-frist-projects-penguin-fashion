@@ -2,49 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguin Fashion</title>
-    <!--favicon link and img-->
-    <link rel="shortcut icon" href="./icons/house.png" type="image/x-icon">
-    <!-- Bebas Neue google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- roboto googal font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--Font-Awesome-icon link-->
-    <script src="https://kit.fontawesome.com/7cb9b40a21.js" crossorigin="anonymous"></script>
-    <!-- tailwindcss play cdn link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-     <!-- tailwindcss play cdn Try customizing your config link -->
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penguin Fashion</title>
+  <!--favicon link and img-->
+  <link rel="shortcut icon" href="./icons/house.png" type="image/x-icon">
+  <!-- Bebas Neue google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- roboto googal font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--Font-Awesome-icon link-->
+  <script src="https://kit.fontawesome.com/7cb9b40a21.js" crossorigin="anonymous"></script>
+  <!-- tailwindcss play cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwindcss play cdn Try customizing your config link -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
+  <style>
+    .font-Bebas-neue {
+      font-family: "Bebas Neue", serif;
+    }
+
+    .font-roboto {
+      font-family: "Roboto", serif;
+    }
+  </style>
 
 </head>
 
-<body>
-    <header>
+<body class="max-w-screen-2xl mx-0">
+  <header class="bg-[#FFFBF0] mx-auto">
+    <nav class="container mx-auto lg:flex lg:justify-between  text-center items-center  lg:items-center pt-6">
+        <div class="flex justify-around items-center">
+          <img class="lg:w-80 w-60 md:w-80 lg:mb-auto md:mb-4" src="./icons/logo.png" alt="">
+          <p class="lg:hidden text-xl "><i class="fa-solid fa-bars"></i></p>
+        </div>
+          <div class="lg:flex lg:justify-center lg:gap-9 hidden">
+          <p class="lg:text-2xl text-lg font-roboto font-semibold"><a href="">Home</a></p>
+          <p class="lg:text-2xl text-lg font-roboto font-semibold"><a href="">Product</a></p>
+          <p class="lg:text-2xl text-lg font-roboto font-semibold"><a href="">About us</a></p>
+          <p class="lg:text-2xl text-lg font-roboto font-semibold"><a href="">Contact us</a></p>
+        </div>
+    </nav>
+    <div class="container mx-auto  lg:py-16 lg:flex lg:items-center lg:justify-between">
+      <div>
+        <h1 class="font-Bebas-neue lg:text-7xl text-5xl lg:mt-auto mt-10 mx-auto lg:w-96 w-72 text-center lg:text-left"><span class="text-[#FABE4C]">Be the Penguins</span> <span class="text-[#363958]">of Winter</span></h1>
+        <p class="font-roboto text-base lg:w-80 w-66 text-center mx-auto lg:mx-0  lg:text-left lg:my-2 my-6 ">Lorem Ipsum is simply dummy text of the printing 
+          and typesetting industry.</p>
+        <button class="text-white mx-auto lg:my-2 my-6 px-8 py-5 font-bold font-roboto text-lg rounded-md items-center bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><i class="fa-solid fa-cart-shopping text-white  "></i> BUY NOW</button>
+      </div>
+      <div><img class=" mx-auto lg:w-5/6 md:w-60 w-72"  src="./images/model.png" alt=""></div>
+    </div>
+  </header>
+  <main>
 
-    </header>
-    <main>
+  </main>
+  <footer>
 
-    </main>
-    <footer>
-        
-    </footer>
+  </footer>
 
 </body>
 
